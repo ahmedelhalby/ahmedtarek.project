@@ -1,0 +1,105 @@
+*{
+    margin: 0px;
+}
+.circle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: grey 5px solid;
+    border-left-color:transparent ;
+    /* border-bottom-color:rgba(10, 146, 236, 0.279) ; 
+    border-right-color:rgba(10, 146, 236, 0.279) ; 
+    border-left-color:rgba(10, 146, 236, 0.279) ;  */
+    animation: round 2s infinite linear;
+    animation-name: round; 
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+} 
+
+
+
+@keyframes round{
+    to{transform: rotate(360deg) ;}
+} 
+
+
+
+span{
+    height: 20px;
+    width: 20px;
+    transform: translate(-50%,-50%);
+    margin-left:2px;
+    background-color: pink;
+    animation: load linear;
+    animation-duration: 4s;
+    animation-iteration-count:infinite  ;
+}
+.a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation-delay:1;
+}
+.b{
+    position: absolute;
+    top: 50%;
+    left: 46%;
+    animation-delay: 2s ;
+}
+.c{
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    animation-delay:3s 
+}
+
+@keyframes load {
+    to{opacity:0%;top:45% ; }
+}
+
+/* new animation */
+.header{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+/* .round{
+    animation: round 0.1s infinite linear;
+
+} */
+.squre{
+    height: 200px;
+    width: 200px;
+    background-color: #620707;
+    border-radius: 10px;
+}
+
+.v{
+    height: 200px;
+    width: 60px;
+    background-color: rgb(254, 254, 254);
+    position: absolute;
+    top: 0;
+    left:70px ;
+}
+.h{
+    height: 60px;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top:75px;
+}
+center{
+    height: 60px;
+    width: 60px;
+    background-color: #620707;
+    position: absolute;
+    top: 38%;
+    left: 35%;
+    border-radius: 10px;
+}
